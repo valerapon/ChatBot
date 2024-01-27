@@ -1,6 +1,6 @@
 # ChatBot
-Сборка: docker build -t chatbot .
-Запуск: docker run -d --name ChatBot -p 80:80 chatbot
+Сборка: `docker build -t chatbot .`   
+Запуск: `docker run -d --name ChatBot -p 80:80 chatbot`  
 Тест:
  - по ссылке http://127.0.0.1
  - сделать запрос на http://127.0.0.1/send_message/ с телом
