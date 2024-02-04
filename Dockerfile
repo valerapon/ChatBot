@@ -1,10 +1,12 @@
-FROM python:3.12.1
+FROM python:3.10
 
 WORKDIR /ChatBot
 
 COPY ./requirements.txt /ChatBot/requirements.txt
 
 RUN pip install --no-cache-dir --upgrade -r /ChatBot/requirements.txt
+RUN mkdir /ChatBot/documents
+RUN mkdir /ChatBot/model
 
 COPY ./app /ChatBot/app
 
